@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>WebSocket Chat</title>
+</head>
+<body>
+    <main class="wrap">
+        <nav>
+            <h1 class="title"><span>TOP</span>CHAT</h1>
+            <h6 class="user"></h6>
+        </nav>
+        <section class="chat-wrap">
+            <form class="form-message" style="display: none">
+                <textarea placeholder="Введите сообщение" maxlength="250" class="message-field"></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            <form name="auth" class="auth">
+                <h3>Чтобы отправить сообщение необходимо ввести имя.</h3>
+                <input class="nickField" type="text" placeholder="Введите ваше имя" name="nick" />
+                <input class="submit-btn" type="submit" value="OK"/>
+            </form>
+            <ul class="chat">
+                <!-- <li class="post">
+                    <span class="post-time">13:31:41</span>
+                    <span class="post-author">repotrett: </span>
+                    <span class="post-message">hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora non quos, sequi nemo harum porro dignissimos adipisci molestias quam soluta earum odio quod vel eligendi repudiandae iste facilis quidem amet, quo voluptas architecto. Ducimus accusantium tempora illo laborum blanditiis architecto quas reiciendis fuga? Voluptatem veritatis cumque repellendus, exercitationem velit iure.</span>
+                </li>
+                <li class="post">hello</li> -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
